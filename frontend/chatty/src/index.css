@@ -23,3 +23,8 @@ button{
   margin-left: 20px;
   border-radius: 15px;
 }
+
+span{
+  padding: 15px;
+  background-color: orange;
+}

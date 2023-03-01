@@ -4,9 +4,6 @@ const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
      cors: {
         origin: "*",
-    //     methods:["GET","POST"],
-    // allowedHeaders: ["my-custom-header"],
-    // credentials: true
   }
 })
 
@@ -19,7 +16,6 @@ io.on("connection", (socket) => {
     })
 })
 
-// app.listen(5000, () => console.log("Server is active...."));
 
 server.listen(5000, () => {
     console.log("Server is listening on Port 5000...");
