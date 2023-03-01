@@ -11,3 +11,9 @@ io.on("connection", (socket) => {
         io.emit("chat",payload)
     })
 })
+
+// app.listen(5000, () => console.log("Server is active...."));
+
+server.listen(5000, () => {
+    console.log("Server is listening on Port 5000...");
+})
